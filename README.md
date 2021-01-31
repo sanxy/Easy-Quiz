@@ -1,6 +1,6 @@
 # easy_quiz
 
-Flutter application for quiz using boolean as input and stored questions and answers in the app. No data storage is used. Alert dialog is used to display questions and answers.
+Flutter application for quiz using boolean as input and stored questions and answers in the app. No data storage is used. Alert dialog is used to display questions and answers. It displays correct and wrong answer selection with the use of green tick or red cancel respectively at the bottom.
 
 ## Screenshots
 
