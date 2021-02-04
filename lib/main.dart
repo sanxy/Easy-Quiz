@@ -8,6 +8,11 @@ AllQuiz allQuiz = AllQuiz();
 void main() => runApp(QuizApp());
 
 class QuizApp extends StatelessWidget {
+  final String title;
+  final String message;
+
+  const QuizApp({Key key, this.title, this.message}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
