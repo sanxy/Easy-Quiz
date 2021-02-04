@@ -28,8 +28,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Icon> _userAnswers = List();
+  final List<Icon> _userAnswers = [];
 
+  // ignore: always_declare_return_types
   _showFinishedAlertDialog(context) {
     Alert(context: context, title: 'Quiz Over', desc: 'Press Reset', buttons: [
       DialogButton(
@@ -43,27 +44,28 @@ class _HomePageState extends State<HomePage> {
     ]).show();
   }
 
-  _getCorrectAnswerWidget() {
+  Icon _getCorrectAnswerWidget() {
     return Icon(
       Icons.check,
       color: Colors.green,
     );
   }
 
-  _getWrongAnswerWidget() {
+  Icon _getWrongAnswerWidget() {
     return Icon(
       Icons.close,
       color: Colors.red,
     );
   }
 
+  // ignore: always_declare_return_types
   _updateUserScore(bool userAnswer, BuildContext context) {
     if (userAnswer == allQuiz.getCorrectAnswer()) {
       _userAnswers.add(_getCorrectAnswerWidget());
     } else {
       _userAnswers.add(_getWrongAnswerWidget());
     }
-    bool questionsAvailable = allQuiz.nextQuestion();
+    var questionsAvailable = allQuiz.nextQuestion();
 
     if (!questionsAvailable) {
       _showFinishedAlertDialog(context);
