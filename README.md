@@ -1,16 +1,21 @@
 # easy_quiz
 
-A new Flutter application.
+Flutter application for quiz using boolean as input and stored questions and answers in the app. No data storage is used. Alert dialog is used to display questions and answers. It displays correct and wrong answer selection with the use of green tick or red cancel respectively at the bottom.
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
+<img height=550 width=275 src="https://github.com/sanxy/Easy-Quiz/blob/master/screenshot/2.png"><img height=550 width=275 src="https://github.com/sanxy/Easy-Quiz/blob/master/screenshot/1.png" hspace=24/><img height=550 width=275 src="https://github.com/sanxy/Easy-Quiz/blob/master/screenshot/3.png"/> 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Flutter Packages used 
+<table style="width:10%">
+  <tr>
+    <th>Package</th>
+    <th>Version</th>
+  </tr>
+  <tr>
+    <td>rflutter_alert</td>
+    <td>^1.1.0</td>
+  </tr>
+  
+</table>
